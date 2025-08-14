@@ -31,7 +31,7 @@ const products = [
     originalPrice: "$199",
     rating: 4.7,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1564694202883-46e5cd7b2c15?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=400&h=400&fit=crop",
     features: ["Handcrafted Wood", "Vintage Style", "Collector's Edition"]
   }
 ]
