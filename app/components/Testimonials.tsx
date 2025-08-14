@@ -5,21 +5,18 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "CEO, TechCorp",
-    image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=100&h=100&fit=crop&crop=face",
     rating: 5,
     text: "These pens have transformed my writing experience. The quality is unmatched, and they make every signature feel important."
   },
   {
     name: "Michael Chen",
     role: "Author & Journalist",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
     rating: 5,
     text: "As someone who writes for hours daily, the comfort and precision of these pens is incredible. Worth every penny."
   },
   {
     name: "Emily Rodriguez",
     role: "Legal Partner",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
     rating: 5,
     text: "Professional, elegant, and reliable. These pens reflect the quality I demand in my legal practice."
   }
@@ -47,13 +44,7 @@ export default function Testimonials() {
               <Quote className="absolute top-6 right-6 w-8 h-8 text-blue-200" />
               
               <div className="flex items-center gap-4 mb-6">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
+                
                 <div>
                   <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>

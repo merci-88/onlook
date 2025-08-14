@@ -11,7 +11,6 @@ const products = [
     originalPrice: "$399",
     rating: 4.9,
     reviews: 247,
-    image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=400&h=400&fit=crop",
     features: ["24k Gold Plated", "Smooth Ink Flow", "Luxury Gift Box"]
   },
   {
@@ -21,7 +20,6 @@ const products = [
     originalPrice: "$249",
     rating: 4.8,
     reviews: 189,
-    image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=400&fit=crop",
     features: ["Titanium Body", "Ergonomic Design", "Refillable Cartridge"]
   },
   {
@@ -31,7 +29,6 @@ const products = [
     originalPrice: "$199",
     rating: 4.7,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=400&h=400&fit=crop",
     features: ["Handcrafted Wood", "Vintage Style", "Collector's Edition"]
   }
 ]
@@ -56,13 +53,7 @@ export default function Products() {
               className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:transform hover:scale-105"
             >
               <div className="relative overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   Save {Math.round(((parseInt(product.originalPrice.slice(1)) - parseInt(product.price.slice(1))) / parseInt(product.originalPrice.slice(1))) * 100)}%
                 </div>
